@@ -1,0 +1,1 @@
+aws lightsail push-container-image --region eu-central-1 --service-name nodejs --label mystaticwebsite --image nodejs
