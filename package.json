@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "scripts": {
+    "publish": "upload && docker build -t nodejs .  && aws lightsail push-container-image --region eu-central-1 --service-name nginx --label mystaticwebsite --image nodejs"
   }
 }
